@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#cfe8f7">
+<title>Felices 4 meses, mi amor 💗</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--sky:#d9edf9;--sky2:#bfe0f3;--cream:#fffaf0;--red:#e8665c;--red2:#d4524a;--sun:#ffd466;--navy:#35476b;--soft:#6c7a96}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--sky);color:var(--navy);font:400 1rem/1.7 "Fredoka","Trebuchet MS",sans-serif;overflow-x:hidden}
+section{padding:48px 18px}.wrap{width:min(100%,820px);margin:auto}.center{text-align:center}
+h2{font:600 clamp(1.5rem,4.5vw,2.1rem)/1.2 "Fredoka",sans-serif;color:var(--red);margin:0 0 8px}
+.tag{display:inline-block;background:var(--sun);color:var(--navy);padding:4px 14px;border-radius:99px;font-weight:500;font-size:.82rem;margin-bottom:10px}
+.lead{max-width:520px;margin:0 auto 22px;color:var(--soft)}
+.btn{display:inline-block;border:0;border-radius:99px;padding:12px 24px;background:var(--red);color:#fff;text-decoration:none;font:500 1rem "Fredoka",sans-serif;cursor:pointer;box-shadow:0 5px 0 var(--red2);transition:.15s}
+.btn:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--red2)}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;text-align:center;padding:52px 18px 64px;background:linear-gradient(180deg,var(--sky2),var(--sky))}
+.cloud{position:absolute;background:#fff;border-radius:99px;opacity:.85;animation:drift 14s ease-in-out infinite alternate}
+.cloud:before,.cloud:after{content:"";position:absolute;background:#fff;border-radius:50%}
+.c1{width:90px;height:26px;top:12%;left:6%}.c1:before{width:40px;height:40px;top:-18px;left:14px}.c1:after{width:30px;height:30px;top:-12px;left:46px}
+.c2{width:70px;height:22px;top:30%;right:7%;animation-delay:3s}.c2:before{width:32px;height:32px;top:-14px;left:10px}.c2:after{width:24px;height:24px;top:-9px;left:36px}
+.hero-in{position:relative;max-width:640px;margin:auto}
+.hero h1{font:600 clamp(2.2rem,8vw,3.6rem)/1.05 "Fredoka",sans-serif;color:var(--navy);margin:6px 0 10px}
+.hero h1 em{font-style:normal;color:var(--red);display:inline-block;position:relative}
+.hero h1 em:after{content:"";position:absolute;left:0;right:0;bottom:2px;height:10px;background:var(--sun);z-index:-1;border-radius:6px}
+.hero p{margin:0 auto 18px;max-width:480px}
+.pair{display:flex;justify-content:center;gap:10px;margin:14px 0 22px}
+.pair .gif{width:min(40vw,170px);height:150px;object-fit:contain;background:var(--cream);border:3px solid #fff;border-radius:22px;padding:8px;box-shadow:0 8px 0 #35476b14;mix-blend-mode:normal}
+.pair>:first-child{transform:rotate(-4deg)}.pair>:last-child{transform:rotate(4deg)}
+.badge{position:absolute;right:-6px;top:-18px;width:74px;height:74px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font:600 2.2rem/1 "Fredoka";box-shadow:0 5px 0 var(--red2);transform:rotate(12deg);animation:wob 3s ease-in-out infinite}
+.badge small{display:block;font-size:.6rem;font-weight:500;margin-top:-6px}
+
+/* CARTA */
+.paper{background:var(--cream);border-radius:22px;padding:clamp(22px,5vw,40px);box-shadow:0 8px 0 #35476b12;border:2px dashed #e9d9b8;position:relative}
+.paper:before{content:"";position:absolute;top:-12px;left:50%;width:90px;height:24px;background:var(--sun);opacity:.9;transform:translateX(-50%) rotate(-2deg);border-radius:4px}
+.letter{white-space:pre-line;font-size:.98rem;line-height:1.85}
+.sign{text-align:right;font:600 1.6rem "Caveat",cursive;color:var(--red);margin-top:12px}
+
+/* RAZONES */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.reason{border:0;background:none;padding:0;height:170px;cursor:pointer;color:inherit;perspective:900px;font:inherit}
+.inner{position:relative;display:block;height:100%;transform-style:preserve-3d;transition:transform .55s}
+.reason.open .inner{transform:rotateY(180deg)}
+.front,.back{position:absolute;inset:0;border-radius:20px;padding:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.front{background:#fff;border:2px solid #fff;box-shadow:0 5px 0 #35476b14}
+.reason:nth-child(3n+2) .front{background:#fff3c9}.reason:nth-child(3n) .front{background:#ffe1dc}
+.back{background:var(--navy);color:#fff;transform:rotateY(180deg);font-size:.83rem;line-height:1.5}
+.emoji{font-size:2rem;line-height:1.2;height:78px;display:grid;place-items:center}.rg{width:78px;height:78px;object-fit:contain;border-radius:14px;margin-bottom:2px}.front small{color:var(--soft);font-size:.72rem}
+
+.gif.big{width:min(70vw,230px);height:auto;max-height:220px;object-fit:contain;display:block;margin:0 auto 14px}
+.ph{display:grid;place-items:center;font-size:3rem;background:var(--cream);border-radius:22px;width:min(40vw,170px);height:150px}
+.final{max-width:540px;margin:0 auto;padding:22px;border-radius:22px;background:var(--cream);box-shadow:0 6px 0 #35476b14}
+.final h3{font:600 1.4rem "Fredoka";color:var(--red);margin:0 0 6px}.final p{margin:6px 0}
+footer{text-align:center;background:var(--navy);color:#fff;padding:22px 18px;font-size:.9rem}footer p{margin:2px 0}
+.fh{position:fixed;bottom:-35px;z-index:20;pointer-events:none;animation:rise 4s linear forwards}
+
+@keyframes drift{to{transform:translateX(24px)}}@keyframes wob{50%{transform:rotate(4deg) scale(1.06)}}
+@keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:.85}100%{transform:translateY(-110vh) rotate(30deg);opacity:0}}
+@keyframes pop{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:none}}
+@media(max-width:700px){section{padding:40px 14px}.badge{right:0;width:62px;height:62px;font-size:1.8rem}}
+@media(max-width:420px){.grid{grid-template-columns:repeat(2,1fr)}.reason{height:160px}.pair .gif,.ph{height:120px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <span class="cloud c1"></span><span class="cloud c2"></span>
+  <div class="hero-in">
+    <span class="badge">4<small>meses</small></span>
+    <span class="tag">Un regalito hecho para ti 🎀</span>
+    <h1>Felices <em>4 meses</em>, mi amor 💗</h1>
+    <p>Cuatro meses compartiendo momentos y cariño. Qué bonito es tenerte en mi vida.</p>
+    <div class="pair">
+      <img class="gif" src="imagenes/gif-1.gif" alt="Snoopy tierno" onerror="ph(this)">
+      <img class="gif" src="imagenes/gif-2.gif" alt="Snoopy abrazando a Woodstock" onerror="ph(this)">
+    </div>
+    <a class="btn" href="#carta">Tengo algo para ti 💌</a>
+  </div>
+</header>
+
+<main>
+<section id="carta"><div class="wrap"><article class="paper">
+  <h2 class="center">Para mi personita favorita 💌</h2>
+  <div class="letter">Mi Yoita:
+
+Hoy cumplimos cuatro meses juntos y quería hacerte algo especial para recordarte lo mucho que eres para mí.
+
+Tal vez cuatro meses parezcan poco para algunas personas, pero para mí tienen un valor muy bonito, porque son parte de nuestra historia y de todo lo que hemos compartido hasta ahora.
+
+Me encanta tenerte en mi vida, poder hablar contigo, compartir risas y poder sonreír gracias a ti. No necesitamos que todos nuestros días sean perfectos; lo que deseo es que podamos seguir aprendiendo, escuchándonos, cuidándonos y disfrutando de los pequeños detalles.
+
+Gracias por ser parte de mis días, por los momentos bonitos y por todo lo que todavía nos falta descubrir juntos. Quiero seguir creando recuerdos contigo, celebrar nuestros logros y acompañarnos también cuando las cosas no salgan como esperamos.
+
+Si pudiera pedir un deseo para nosotros, sería que nunca nos falten el respeto, la confianza, la comunicación y las ganas de seguir construyendo algo bonito.
+
+Felices cuatro meses, mi vida. Hoy celebro lo que hemos compartido y me hace mucha ilusión pensar en todos los recuerdos que todavía podemos crear.
+
+Te quiero muchísimo. 💗</div>
+  <div class="sign">Con mucho cariño, Zequi ♡</div>
+</article></div></section>
+
+<section><div class="wrap center">
+  <span class="tag">Pequeños recordatorios</span><h2>6 razones por las que eres especial 💕</h2>
+  <p class="lead">Toca cada tarjetita para descubrir un mensajito.</p>
+  <div class="grid">
+    <button class="reason" type="button" aria-expanded="false"><span class="inner"><span class="front"><img class="rg" src="imagenes/razon-1.gif" alt="" onerror="eg(this,'😊')"><b>Tu sonrisa</b><small>Ábreme ♡</small></span><span class="back">Porque tu sonrisa me alegra el día y convierte un momento sencillo en uno especial.</span></span></button>
+    <button class="reason" type="button" aria-expanded="false"><span class="inner"><span class="front"><img class="rg" src="imagenes/razon-2.gif" alt="" onerror="eg(this,'💗')"><b>Tu cariño</b><small>Ábreme ♡</small></span><span class="back">Porque los pequeños detalles y las muestras de cariño significan muchísimo.</span></span></button>
+    <button class="reason" type="button" aria-expanded="false"><span class="inner"><span class="front"><img class="rg" src="imagenes/razon-3.gif" alt="" onerror="eg(this,'🌷')"><b>Tu forma de ser</b><small>Ábreme ♡</small></span><span class="back">Porque tienes una manera única de ser y eso te hace especial para mí.</span></span></button>
+    <button class="reason" type="button" aria-expanded="false"><span class="inner"><span class="front"><img class="rg" src="imagenes/razon-4.gif" alt="" onerror="eg(this,'✨')"><b>Los momentos</b><small>Ábreme ♡</small></span><span class="back">Porque hasta las conversaciones más sencillas se vuelven recuerdos bonitos contigo.</span></span></button>
+    <button class="reason" type="button" aria-expanded="false"><span class="inner"><span class="front"><img class="rg" src="imagenes/razon-5.gif" alt="" onerror="eg(this,'🫶')"><b>Tu compañía</b><small>Ábreme ♡</small></span><span class="back">Porque compartir tiempo, escucharnos y apoyarnos hace especial lo nuestro.</span></span></button>
+    <button class="reason" type="button" aria-expanded="false"><span class="inner"><span class="front"><img class="rg" src="imagenes/razon-6.gif" alt="" onerror="eg(this,'💌')"><b>Nuestra historia</b><small>Ábreme ♡</small></span><span class="back">Porque me gusta que tengamos una historia propia y seguir llenándola de recuerdos.</span></span></button>
+  </div>
+</div></section>
+
+<section style="padding-top:8px"><div class="wrap center">
+  <img class="gif big" src="imagenes/gif-3.gif" alt="Snoopy tierno" onerror="ph(this)">
+  <div class="final"><h3>¡Felices 4 meses, mi amor! 🎀</h3>
+    <p>Gracias por ser parte de mi historia. Deseo que sigamos compartiendo momentos lindos, cuidando lo nuestro y construyendo recuerdos a nuestro ritmo.</p>
+    <p><b>Te quiero mucho, hoy y en cada día nuevo. 💗</b></p>
+  </div>
+</div></section>
+</main>
+
+<footer><p>💗 🐾 💗</p><p>Hecho con mucho cariño para una personita especial · 4 meses de nosotros ♡</p></footer>
+
+<script>
+document.querySelectorAll(".reason").forEach(c=>c.addEventListener("click",()=>{c.setAttribute("aria-expanded",String(c.classList.toggle("open")))}));
+function ph(i){const p=document.createElement("span");p.className="ph";p.textContent="🐶";if(i.classList.contains("big"))p.style.margin="0 auto 14px";i.replaceWith(p)}
+function eg(i,e){const p=document.createElement("span");p.className="emoji";p.textContent=e;i.replaceWith(p)}
+function hearts(n=5){const s=["💗","💕","🌸","💖","⭐"];for(let i=0;i<n;i++)setTimeout(()=>{const e=document.createElement("span");e.className="fh";e.textContent=s[Math.floor(Math.random()*s.length)];e.style.left=Math.random()*92+"%";e.style.fontSize=(18+Math.random()*16)+"px";e.style.animationDuration=(3+Math.random()*2)+"s";document.body.appendChild(e);e.addEventListener("animationend",()=>e.remove())},i*120)}
+addEventListener("load",()=>setTimeout(()=>hearts(6),500));
+</script>
+</body>
+</html>
